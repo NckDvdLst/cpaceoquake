@@ -1,0 +1,6 @@
+[submodule "mlkem-native"]
+	path = mlkem-native
+	url = git@github.com:pq-code-package/mlkem-native.git
+[submodule "cpace"]
+	path = cpace
+	url = git@github.com:jedisct1/cpace.git
