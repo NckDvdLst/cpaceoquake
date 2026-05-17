@@ -30,9 +30,9 @@ int encode_sid(const uint8_t *sid, const size_t sid_len, const uint8_t u[16], co
 
     write_u32_be(fullsid, sid_len);
     memcpy(&fullsid[4], sid, sid_len);
-    write_u32_be(fullsid+4, 16);
+    write_u32_be(fullsid+4+sid_len, 16);
     memcpy(&fullsid[8+sid_len], u, 16);
-    write_u32_be(fullsid+24, 16);
+    write_u32_be(fullsid+24+sid_len, 16);
     memcpy(&fullsid[28+sid_len], s, 16);
     *encoded_sid = fullsid;
     return 0;

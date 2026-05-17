@@ -10,7 +10,7 @@
 #define CPACEOQUAKE_H
 
 #define CPACEOQUAKE_DST "CPACEOQUAKE-v1.0.0"
-#define CPACEOQUAKE_DST_LEN 19
+#define CPACEOQUAKE_DST_LEN 18
 #define CPACEOQUAKE_NKEY 32
 
 #include <stdint.h>
